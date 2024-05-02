@@ -1,16 +1,22 @@
+# Test values:
+# ls_t = [2, 4, 6, 2, 1, 1, 9, 4, 6]
+# ls_t = [2, 3, 4, 5, 6, 7, 8]
+# ls_t = []
+# ls_t = [1, -1]
+# ls_t = [1, 1, 1, 1, 1]
 
 ls_t = [2, 4, 6, 2, 1, 1, 9, 4, 6]
-#ls_t = []
+
 
 MIN = 3
 MAX = 6
 
-sum = 0
+sum_1 = 0
 for i in ls_t:
     if i >= MIN and i <= MAX:
-        sum += i
-if sum != 0:
-    print(sum)
+        sum_1 += i
+if sum_1 != 0:
+    print(sum_1)
 else:
     print(None)
 
@@ -30,16 +36,3 @@ else:
 
 
 
-
-
-
-
-
-
-
-
-# lst = [2, 4, 6, 2, 1, 1, 9, 4, 6]
-# MIN = 3
-# MAX = 6
-# ...
-# sum_ = 20, product = 576
