@@ -1,21 +1,32 @@
-import math
 
 ls_t = [2, 4, 6, 2, 1, 1, 9, 4, 6]
-# ls_t = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+#ls_t = []
+
 MIN = 3
 MAX = 6
 
-ls_nn = sum(i for i in ls_t if i >= MIN and i <= MAX)
-if ls_nn == 0:
-    print(None)
+sum = 0
+for i in ls_t:
+    if i >= MIN and i <= MAX:
+        sum += i
+if sum != 0:
+    print(sum)
 else:
-    print(ls_nn)
+    print(None)
 
-ls_qq = math.prod(i for i in ls_t if i >= MIN and i <= MAX)
-if ls_qq == 0:
-    print(None)
+
+prd = 0
+for i in ls_t:
+    if i >= MIN and i <= MAX:
+        if prd == 0:
+            prd = i
+        else:
+            prd *= i
+if prd != 0:
+    print(prd)
 else:
-    print(ls_qq)
+    print(None)
+
 
 
 
